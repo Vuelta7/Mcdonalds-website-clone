@@ -17,7 +17,7 @@ class ImageGrid extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: SizedBox(
-        height: 1000,
+        height: 660,
         width: 1000,
         child: GridView.count(
           mainAxisSpacing: 20,
