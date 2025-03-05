@@ -15,6 +15,7 @@ class ImageCarousel extends StatelessWidget {
           autoPlayCurve: Curves.linearToEaseOut,
           viewportFraction: 1.0,
           enableInfiniteScroll: true,
+          scrollPhysics: AlwaysScrollableScrollPhysics(),
         ),
         items: [
           Image.asset(

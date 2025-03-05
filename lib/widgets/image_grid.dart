@@ -1,37 +1,33 @@
 import 'package:flutter/material.dart';
 
 class ImageGrid extends StatelessWidget {
-  const ImageGrid({super.key});
+  ImageGrid({super.key});
+
+  final List<String> items = [
+    "assets/images/grid1.png",
+    "assets/images/grid2.png",
+    "assets/images/grid3.png",
+    "assets/images/grid4.png",
+    "assets/images/grid5.png",
+    "assets/images/grid6.png",
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: SizedBox(
+        height: 1000,
+        width: 1000,
+        child: GridView.count(
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 20,
           crossAxisCount: 3,
-          crossAxisSpacing: 16,
-          mainAxisExtent: 100,
+          physics: NeverScrollableScrollPhysics(),
+          children: List.generate(6, (index) {
+            return Image.asset(items[index]);
+          }),
         ),
-        itemCount: 6,
-        itemBuilder: (BuildContext context, int index) {
-          // Update the image paths to match the correct filenames
-          return GridItem(image: "assets/images/grid${index + 1}.png");
-        },
-      ),
-    );
-  }
-}
-
-class GridItem extends StatelessWidget {
-  final String image;
-  const GridItem({super.key, required this.image});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
       ),
     );
   }

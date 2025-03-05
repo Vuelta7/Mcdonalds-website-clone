@@ -14,13 +14,15 @@ class McdoAppBar extends StatelessWidget implements PreferredSizeWidget {
       fontFamily: "Roboto",
     );
     return AppBar(
+      backgroundColor: Colors.white,
+      elevation: 0,
       toolbarHeight: 200,
       title: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/mcdo_logo.png', width: 100),
+            Image.asset('assets/images/mcdo_logo.png', width: 150),
             SizedBox(width: 10),
             Text('Home', style: appBarTextStyle),
             SizedBox(width: 20),

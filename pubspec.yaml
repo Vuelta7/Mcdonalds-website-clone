@@ -34,3 +34,8 @@ flutter:
     - assets/images/grid4.png
     - assets/images/grid5.png
     - assets/images/grid6.png
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/Roboto-Black.ttf
