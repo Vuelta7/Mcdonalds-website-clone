@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:mcdonalds_website_clone/widgets/appbar.dart';
 import 'package:mcdonalds_website_clone/widgets/footer.dart';
 import 'package:mcdonalds_website_clone/widgets/image_carousel.dart';
 import 'package:mcdonalds_website_clone/widgets/image_grid.dart';
 
 void main() {
+  debugPaintSizeEnabled = true;
   runApp(MyApp());
 }
 

@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   carousel_slider: ^5.0.0
+  flutter_svg: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,6 +35,8 @@ flutter:
     - assets/images/grid4.png
     - assets/images/grid5.png
     - assets/images/grid6.png
+    - assets/images/mcdelivery.png
+    - assets/images/google_play.svg
 
   fonts:
     - family: Roboto
